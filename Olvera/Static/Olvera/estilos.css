@@ -1,21 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffcccc;
-    color: #333;
+    background-color: #dbeafe; /* azul clarito de fondo */
+    color: #1e293b;
 }
 
 /* ENCABEZADO */
 header {
-    background-color: plum;
-    color: black;
+    background-color: #1e3a8a; /* azul marino */
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
 /* MENÚ */
 nav {
-    background-color: #c184aa;
+    background-color: #2563eb; /* azul medio */
     padding: 10px;
 }
 nav ul {
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcccc;
+    color: #bfdbfe; /* azul pastel al pasar el mouse */
 }
 
 /* CONTENIDO PRINCIPAL */
@@ -48,7 +48,7 @@ nav a:hover {
 }
 
 .bienvenida h2 {
-    color: purple;
+    color: #1e40af; /* azul fuerte para el título */
 }
 
 .bienvenida p {
@@ -58,7 +58,7 @@ nav a:hover {
 
 /* PIE DE PÁGINA */
 footer {
-    background-color: purple;
+    background-color: #1e3a8a; /* mismo azul del header para que combine */
     color: white;
     text-align: center;
     padding: 15px;
