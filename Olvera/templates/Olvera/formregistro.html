@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+
+    <link rel="stylesheet" href="{% static 'Olvera/estilos.css' %}">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>REGISTRA TUS DATOS</h1>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav>
+            <ul>
+                <li><a href="inicio">INICIO</a></li>
+                <li><a href="regsitro">REGISTRO</a></li>
+                <li><a href="#">dos</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+<form method="post">
+     <label> Nombre:</label>
+     <input type="text" name="Nombre" placeholder="Escribe tu nombre">
+     <label> Apellido Materno:</label>
+     <input type="text" name="apellidom" placeholder="Escribe tu apellidom">
+     <label> Apellido Paterno:</label>
+     <input type="text" name="apellidop" placeholder="Escribe tu apellidop" required>
+     <label Edad:></label>
+     <input type="number" name="Edad" min="14" max="25" placeholder="Escribetu Edad" required>
+     <button type="submit">Guardar</button>
+</form>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>PAGINA WEB ELABORADA POR ALEX OLVERA</p>
+    </footer>
+
+</body>
+</html> 
