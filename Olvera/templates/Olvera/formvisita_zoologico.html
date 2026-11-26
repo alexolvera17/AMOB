@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO VISITA A ZOOLOGICO</title>
+    <link rel="stylesheet" href="{% static 'Olvera/estilos.css' %}?v=6">
+</head>
+<body>
+
+    <header>
+        <h1>REGISTRA TUS DATOS</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio">INICIO</a></li>
+                <li><a href="regsitro">REGISTRO</a></li>
+                <li><a href="visita_zoologico">VISITA_ZOOLOGICO</a></li>
+                <li><a href="#">tres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="formvisitazoologico" method="POST">
+        {% csrf_token %}
+        <h1>Registro para visita al Zoológico</h1>
+
+        <label>Nombre:</label>
+        <input type="text" placeholder="Escribe tu nombre">
+
+        <label>Correo:</label>
+        <input type="email" placeholder="Escribe tu correo">
+
+        <label>Edad:</label>
+        <input type="number" name="Edad" min="1" max="100" placeholder="Escribe tu edad">
+
+        <label>Fecha de visita:</label>
+        <input type="date">
+
+        <label>Turno:</label>
+        <div class="opciones">
+            <input type="radio" name="turno"> Mañana
+            <input type="radio" name="turno"> Tarde
+        </div>
+
+        <label>Animales favoritos:</label>
+        <div class="opciones">
+            <input type="checkbox"> Leones
+            <input type="checkbox"> Tigres
+            <input type="checkbox"> Elefantes
+        </div>
+
+        <label>Comentarios:</label>
+        <textarea placeholder="Escribe tu comentario..."></textarea>
+
+        <button type="submit">Enviar 🦁</button>
+    </form>
+
+</body>
+</html>

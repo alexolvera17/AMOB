@@ -20,34 +20,42 @@
             <ul>
                 <li><a href="inicio">INICIO</a></li>
                 <li><a href="regsitro">REGISTRO</a></li>
-                <li><a href="#">dos</a></li>
+                <li><a href="visita_zoologico">VISITA_ZOOLOGICO</a></li>
                 <li><a href="#">tres</a></li>
             </ul>
         </nav>
     </header>
-<form method="post">
+<form action="{%url 'registro'%}"method="post">
+     {% csrf_token %}
+<form method="POST">
      <label> Nombre:</label>
      <input type="text" name="Nombre" placeholder="Escribe tu nombre">
+    
      <label> Apellido Materno:</label>
      <input type="text" name="apellidom" placeholder="Escribe tu apellidom">
+     
      <label> Apellido Paterno:</label>
      <input type="text" name="apellidop" placeholder="Escribe tu apellidop" required>
+     
      <label Edad:></label>
      <input type="number" name="Edad" min="14" max="25" placeholder="Escribetu Edad" required>
+     
      <label>Genero</label>
      <input type="radio" name="Genero" value="Femenino">Femenino
      <input type="radio" name="Genero" value="Masculino">Masculino <br><br><br>
+     
      <label>Intereses</label>
      <input type="checkbox" name="Intereses" value="Futbol">Futbol
      <input type="checkbox" name="Intereses" value="Musica">Musica
      <input type="checkbox" name="Intereses" value="Videojuegos">Videojuegos
      <input type="checkbox" name="Intereses" value="Salir a pasear">Salir a pasear
+     
      <button type="submit">Guardar</button>
 </form>
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <p>PAGINA WEB ELABORADA POR ALEX OLVERA</p>
+        <p>PAGINA WEB ELABORADA POR ALEX OLVERA</p> 
     </footer>
 
 </body>
